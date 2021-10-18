@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Anna Piotrowska - Portfolio</title>
+	
+	<meta name="description" content="Stworzę dla Ciebie wyjątkową stronę www! Zatrudnij programistę webowego: PHP, JavaScript, HTML, CSS, MySQL, WordPress, Joomla, Drupal." />
+	<meta name="keywords" content="zamów, stronę, tworzenie, www, programista, portfolio, php, javascript, html, css, WordPress, Joomla, Drupal" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&display=swap" rel="stylesheet">
+	
+	<script src="timer.js"></script>
+	<script>
+		function show1() {
+		  document.getElementById("1").style.display = 'block';
+		  document.getElementById("2").style.display = 'none';
+		  document.getElementById("3").style.display = 'none';
+		  document.getElementById("4").style.display = 'none';
+		}
+
+		function show2() {
+		  document.getElementById("1").style.display = 'none';
+		  document.getElementById("2").style.display = 'block';
+		  document.getElementById("3").style.display = 'none';
+		  document.getElementById("4").style.display = 'none';
+		}
+	
+		function show3() {
+		  document.getElementById("1").style.display = 'none';
+		  document.getElementById("2").style.display = 'none';
+		  document.getElementById("3").style.display = 'block';
+		  document.getElementById("4").style.display = 'none';
+		}
+		
+		function show4() {
+		  document.getElementById("1").style.display = 'none';
+		  document.getElementById("2").style.display = 'none';
+		  document.getElementById("3").style.display = 'none';
+		  document.getElementById("4").style.display = 'block';
+		}
+	</script>
+	
+</head>
+
+<body onload="odliczanie();">
+	
+	<div id="container">
+	
+		<div class="rectangle">
+			<div id="logo"><a href="javascript:show1();" class="tilelinklogo">Anna Piotrowska</a></div>
+			<div id="zegar">12:00:00</div>
+			<div style="clear: both;"></div>
+		</div>
+		
+		<div class="menu">
+			<div class="tile1">
+				<a href="javascript:show2();" class="tilelink"><i class="icon-user"></i><br/>Kim jestem?</a>
+			</div>
+			<div class="tile1">
+				<a href="javascript:show3();" class="tilelink"><i class="icon-laptop"></i><br/>Co oferuję?</a>
+			</div>
+			
+			<div class="tile2">
+				<a href="CV_Anna Piotrowska PW.pdf" target="_blank" class="tilelink"><i class="icon-graduation-cap"></i><br/>Curriculum vitae</a>
+			</div>
+			<div class="tile3">
+				<a href="javascript:show4();" class="tilelink"><i class="icon-mail"></i><br/>Kontakt ze mną</a>
+			</div>
+			
+		</div>
+		<div class="content">
+			<div class="tile5" id="1">
+				Witam na moim portfolio. <br/><br/>
+				Zachęcam do zapoznania się z moim CV oraz profilami na LinkedIn oraz GitHub! :) 
+			</div>
+			<div class="tile5" id="2" style="display: none;">
+				Witaj,<br/><br/>
+				Nazywam się Anna Piotrowska. Pół roku temu zaczęłam swoją przygodę z programowaniem. <br/>
+				Z wykształcenia jestem technologiem chemicznym. Obecnie pracuję jako analityk żywności. Jest to praca bardzo schematyczna i powtarzalna. To oraz namowy męża skłoniły mnie do rozpoczęcia nauki programowania. <br/><br/>
+				Zaczęłam od pisania prostych programów w Javie. Poznałam podstawy HTML oraz CSS. Obecnie pracuję nad aplikacją sklepu internetowego z wykorzystaniem frameworku Spring MVC.
+			</div>
+			<div class="tile5" id="3" style="display: none;">
+				Technologie<br/><br/>
+				• znajomość języka JAVA <br/>
+				• znajomość git <br/>
+				• znajomość środowiska InelliJ <br/>
+				• podstawowa znajomość mySQL <br/>
+				• podstawowa znajomość HTML i CSS <br/>
+			</div>
+			<div class="tile5" id="4" style="display: none;">
+				Kontakt<br/>
+				<img src="telefon.png" style="height: 45px;"><br/>
+				e-mail: apiotrow@gmail.com
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="social">
+			<div class="home">
+				<a href="javascript:show1();" class="sociallink"><i class="icon-home"></i></a>
+			</div>
+			<div class="gmail" >
+				<a href="mailto:apiotrow96@gmail.com" target="_blank" class="sociallink"><i class="icon-gmail"></i></a>
+			</div>
+			<div class="linkedin">
+				<a href="https://www.linkedin.com/in/anna-piotrowska-aa1ab4182/" target="_blank" class="sociallink"><i class="icon-linkedin"></i></a>
+			</div>
+			<div class="git">
+				<a href="https://github.com/xanna6" target="_blank" class="sociallink"><i class="icon-github-circled"></i></a>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+	
+		<div class="rectangle">2021&copy; Anna Piotrowska - Portfolio</div>
+		
+	</div>
+	
+</body>
+</html>
